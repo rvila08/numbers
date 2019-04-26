@@ -6,9 +6,10 @@
 echo "Enter a positive number"
 read NUMBER
 N=1
-while[$N-le $NUMBER]
+
+while [ $N -le $NUMBER ]
 do
-	if[$((N%2))-eq 0]
+	if [ $((N%2)) -eq 0 ]
 	then
 		echo $N "even"
 		N=$[$N+1]
